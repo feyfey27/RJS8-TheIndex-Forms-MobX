@@ -14,6 +14,9 @@ import authorStore from "./stores/authorStore";
 import bookStore from "./stores/bookStore";
 
 function App() {
+  // componentDidMount(){
+  //   authorStore.fetchAuthors();
+  // }
   const getView = () => {
     if (authorStore.loading || bookStore.loading) {
       return <Loading />;
